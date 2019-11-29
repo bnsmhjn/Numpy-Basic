@@ -125,8 +125,6 @@ print ("Cumulative sum along each row:\n", arr.cumsum(axis = 1))
 
 
 
-
-
 #binary operations
 a = np.array([[1, 2],
             [3, 4]])
@@ -182,5 +180,22 @@ print("Data type is:",dt.name)
 
 ########################################################################################################################
 
+'''
+#LineSpace
 #https://www.geeksforgeeks.org/numpy-linspace-python/
+#numpy.linspace(start, stop, num = 50, endpoint = True, retstep = False, dtype = None)
+x = geek.linspace(1, 5, 5)
+x = geek.linspace(1, 5, 5,retstep=True,dtype=int)
+print("A\n", x)
 
+'''
+########################################################################################################################
+'''
+#Flatten Array
+y = np.array([[2,3], [4,5]])
+print('Flatted array by default:',y.flatten())
+print('Flatted array by row major(default):',y.flatten())
+print('Flatted array by column major:',y.flatten('F'))
+print('Flatted array by order of elements in memory:',y.flatten('K'))
+'''
+########################################################################################################################
